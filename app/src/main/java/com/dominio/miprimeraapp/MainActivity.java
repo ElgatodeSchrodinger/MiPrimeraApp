@@ -46,6 +46,7 @@ private static final String TAG="MainActivity";
 
             if(username.equals("javier") && password.equals("123")){
                 Toast.makeText(MainActivity.this,"las credenciales son correctas",Toast.LENGTH_SHORT).show();
+                setContentView(R.layout.activity_formulario);
 
             }
             else{

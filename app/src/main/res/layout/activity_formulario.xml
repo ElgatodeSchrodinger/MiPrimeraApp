@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dominio.miprimeraapp.FormularioActivity">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:text="Complete el formulario: "
+            android:textColor="#5B33FF"
+            android:textSize="27sp"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Nombres: "
+            android:textColor="#5B33FF"
+            android:textSize="27sp"
+            android:textStyle="italic" />
+        <EditText android:id="@+id/et_nom"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Apellidos: "
+            android:textColor="#5B33FF"
+            android:textSize="27sp"
+            android:textStyle="italic" />
+        <EditText android:id="@+id/et_ape"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Género: "
+            android:textColor="#5B33FF"
+            android:textSize="27sp"
+            android:textStyle="italic" />
+        <RadioButton android:id="@+id/rb_gnr_m"
+            android:text="Male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton android:id="@+id/rb_gnr_f"
+            android:text="Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Teléfono: "
+            android:textColor="#5B33FF"
+            android:textSize="27sp"
+            android:textStyle="italic" />
+        <EditText android:id="@+id/et_ph"
+            android:layout_width="match_parent"
+            android:inputType="phone"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="E-mail: "
+            android:textColor="#5B33FF"
+            android:textSize="27sp"
+            android:textStyle="italic" />
+        <EditText android:id="@+id/et_em"
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <LinearLayout android:layout_margin="5dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="Estado Civil: "
+               android:textColor="#5B33FF"
+               android:textSize="27sp"
+               android:textStyle="italic" />
+
+       </LinearLayout>
+        <LinearLayout android:layout_margin="5dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_Sltr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soltero" />
+
+            <CheckBox
+                android:id="@+id/cb_csd"
+                android:text="Casado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/cb_vdo"
+                android:text="Viudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/cb_dvc"
+                android:text="Divorciado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button android:id="@+id/btn_acpt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0E088F"
+            android:text="Enviar"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+</LinearLayout>
