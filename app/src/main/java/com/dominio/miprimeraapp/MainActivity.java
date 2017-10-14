@@ -32,7 +32,7 @@ private static final String TAG="MainActivity";
         pass = (EditText)findViewById(R.id.et_pass);
         boton=(Button)findViewById(R.id.btn_login);
         boton.setOnClickListener(new View.OnClickListener()
-        { public void onClick(View view)
+        {  public void onClick(View view)
 
         {
             View v = MainActivity.this.getCurrentFocus();

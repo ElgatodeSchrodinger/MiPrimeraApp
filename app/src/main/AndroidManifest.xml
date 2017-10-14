@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".loginacti" />
-        <activity android:name=".FormularioActivity"></activity>
+        <activity android:name=".FormularioActivity" />
+        <activity android:name=".PracticeActivity"></activity>
     </application>
 
 </manifest>
